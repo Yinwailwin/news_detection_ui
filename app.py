@@ -4,7 +4,23 @@ import pandas as pd
 
 
 # Page configuration
-st.set_page_config(page_title="News Analysis", layout="wide")
+# st.set_page_config(page_title="News Analysis", layout="wide")
+
+st.sidebar.markdown(
+    """
+    <style>
+    .sidebar-text {
+        color: white !important;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+    </style>
+    <p class="sidebar-text">News Analysis</p>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # Sidebar navigation icon
 # st.sidebar.image("https://cdn-icons-png.flaticon.com/512/21/21601.png",width=80)
