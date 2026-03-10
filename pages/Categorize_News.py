@@ -81,8 +81,8 @@ if analyze_btn:
 #     if user_input:
             with st.spinner('Analyzing... Please wait...'):
                 try:
-                    m_file = 'bilstm__model.keras' if "Bi-LSTM" in arch else 'lstm_multiclass_model.keras'
-                    t_file = 'bilstm_tokenizer.pickle' if "Bi-LSTM" in arch else 'lstm_multiclass_tokenizer.pickle'
+                    m_file = 'bilstm__model_v1.keras' if "Bi-LSTM" in arch else 'lstm_multiclass_model_v1.keras'
+                    t_file = 'bilstm_tokenizer_v1.pickle' if "Bi-LSTM" in arch else 'lstm_multiclass_tokenizer_v1.pickle'
 
                     model = load_model(os.path.join(model_path, m_file))
                     with open(os.path.join(model_path, t_file), 'rb') as f:
